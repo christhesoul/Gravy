@@ -1,0 +1,50 @@
+/* Top Level */
+
+$top_level_size:14px;
+
+$border_bottom:1px solid green;
+
+$top_level_padding_top:6px;
+$top_level_padding_bottom:6px;
+$top_level_padding_left_right:10px;
+
+$link_color:#fff;
+$link_background:#000;
+$hover_background_color:$red;
+$hover_color:#fff;
+
+/* Sub Level */
+
+$sub_level_size:$top_level_size;
+
+$sub_level_padding_top:$top_level_padding_top;
+$sub_level_padding_bottom:$top_level_padding_bottom;
+$sub_level_padding_left_right:$top_level_padding_left_right;
+
+$sub_border_bottom:$border_bottom;
+
+$sub_link_color:$link_color;
+$sub_link_background:$link_background;
+$sub_hover_link:#fff;
+$sub_hover_background_color:$yellow;
+
+$position_of_sub_menu:$top_level_padding_top + $top_level_padding_bottom + $top_level_size;
+
+/* Main menu settings */
+nav#centered { clear:both;float:left;margin:0;padding:0;width:100%;font-family:$family;font-size:$top_level_size;line-height:$top_level_size;z-index:1000;position:relative;
+	ul { margin:0;padding:0;list-style:none;float:right;position:relative;right:50%; 
+		li { margin:0 0 0 0;padding:0;float:left;position:relative;left:50%;top:1px;
+			a { display:block;margin:0;padding:$top_level_padding_top $top_level_padding_left_right $top_level_padding_bottom;line-height:$top_level_size;background:$link_background;text-decoration:none;color:$link_color;border-bottom:$border_bottom;
+				&:hover { background:$hover_background_color;color:$hover_color;border-bottom:$sub_border_bottom; }
+			}
+		}
+		&.active a { 	color:#fff;background:#000; }
+		ul { display:none;position:absolute;top:$position_of_sub_menu;left:0;right:auto;width:10em;
+			li { left:auto;margin:0;clear:left;width:100%; }
+		}
+		ul li a, li.active li a, li:hover ul li a { font-size:$sub_level_size;font-weight:normal;background:$sub_link_background;color:$sub_link_color;line-height:$sub_level_size;border-bottom:$sub_border_bottom;padding:$sub_level_padding_top $sub_level_padding_left_right $sub_level_padding_bottom;}
+		ul li a:hover,li.active ul li a:hover,li:hover ul li a:hover,li.hover ul li a:hover { background:$sub_hover_background_color;color:$sub_hover_link;	}
+		ul.last { left:auto;right:0; }
+		li:hover ul, li.hover ul { display:block;	}
+	}
+}

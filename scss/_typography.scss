@@ -1,0 +1,34 @@
+/* Typography */
+
+$bold:normal normal bold;
+$normal:normal normal normal;
+$master_lh:1.5;/* master leading */
+$heading_lh:(10/12);/* leading relative to heading font-size */
+
+@mixin bodytype($style,$multi,$family,$color) {
+	font:$style #{$base*$multi}/#{$base*$multi*$master_lh} $family;
+	margin-bottom:$base;
+	color:$color;
+	margin:0;
+}
+
+/* Padding for headings is the difference between the master line-height and the heading line-height, divided by two (so it's spread equally between top and bottom) */
+@mixin heading($style,$multi,$family,$color) {
+	font:$style #{$base*$multi}/#{($base*$multi*$heading_lh)} $family;
+	padding:(($base*$multi*$master_lh)-($base*$multi*$heading_lh))/2 0;
+	margin:0;
+	letter-spacing:-1px*($multi/3);
+	color:$color;
+}
+
+@mixin typography($base_px:$base) {
+	$base:$base_px;
+	p, li { @include bodytype($normal,1,$family,$paragraph_color) }
+	h1 { @include heading($bold,6,$family,$heading_color_odd) }
+	h2 { @include heading($bold,5,$family,$heading_color_even) }
+	h3 { @include heading($bold,4,$family,$heading_color_odd) }
+	h4 { @include heading($bold,3,$family,$heading_color_even) }
+	h5 { @include heading($bold,2,$family,$heading_color_odd) }
+	h6 { @include heading($bold,1,$family,$heading_color_even) }
+	a { color:$hyperlink_color }
+}

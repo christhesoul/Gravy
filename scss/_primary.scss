@@ -1,0 +1,6 @@
+#container { @include go_960; }
+
+header { @include stock_cube }
+
+#main { @include stock_cube(12,left);background:yellow; }
+#side { @include stock_cube(4,right);background:yellow; }

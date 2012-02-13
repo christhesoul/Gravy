@@ -17,11 +17,12 @@ $dir = get_bloginfo('template_directory');
 		<?php	wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-		<div class="topbar">
-			<?php wp_nav_menu( array( 'container_class' => 'fill', 'theme_location' => 'primary' ) ); ?>
-    </div>
+		
+		<div id="container">
 		
 		<header role="banner">
 
+			<?php wp_nav_menu( array( 'container' => 'nav','container_id' => 'centered','theme_location' => 'primary' ) ); ?>
+				
 		</header>
 		

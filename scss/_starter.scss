@@ -1,0 +1,14 @@
+/* Create a palette, these are only as a guide */
+$red:#6C0420;
+$yellow:#DEB408;
+$blue:#74B3C4;
+$green:#91BC49;
+
+/* Fill These in for Magic */
+$cols:16; /* Choose from 12 or 16 */
+$base:14px; /* 14px is pretty good. 16px is arguably better. http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/ */
+$family:Helvetica; /* Pick a font stack, any font stack */
+$paragraph_color:#333; /* Go for a #333 for the sake of legibility. After all, that's what Apple does. */
+$heading_color_odd:$red; /* Pick a color, any color */
+$heading_color_even:$yellow;
+$hyperlink_color:blue;

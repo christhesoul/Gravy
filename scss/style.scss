@@ -6,10 +6,19 @@
 	Author URI: http://wearecondiment.com/
 	Version: 1.0
 */
+@import "starter";
 
 @import "boilerplate";
 
 @import "wordpress";
+
+@import "typography";
+
+@import "layout";
+
+@import "nav";
+
+@include typography;
 
 /**
  * Primary styles
@@ -17,14 +26,7 @@
  * Author: Condiment
  */
 
-
-
-
-
-
-
-
-
+@import "primary";
 
 /* End primary styles */
 

@@ -1,30 +1,22 @@
 <?php get_header(); ?>
 
-<div id="container">
-	
-	<div class="row">
-		
-		<div class="span12">
+	<div class="cf">
+
+	<section id="main">
 			
 			<?php get_template_part( 'loop', 'page' ); ?>
+			
+	</section>
+	
+	<section id="side">
 			
 			<p>
 				<a href="#" class="btn large primary">Hello!</a>
 				<a href="#" class="btn large">World.</a>
 			</p>
-				
-		</div>
-		
-		<div class="span4">
 			
-			<h1>Sidebar</h1>
-			
-		</div>
-		
+	</section>
+	
 	</div>
-	
-	
-	
-</div>
 
 <?php get_footer(); ?>

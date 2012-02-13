@@ -7,6 +7,13 @@
 	Author URI: http://wearecondiment.com/
 	Version: 1.0
 */
+/* Create a palette, these are only as a guide */
+/* Fill These in for Magic */
+/* Choose from 12 or 16 */
+/* 14px is pretty good. 16px is arguably better. http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/ */
+/* Pick a font stack, any font stack */
+/* Go for a #333 for the sake of legibility. After all, that's what Apple does. */
+/* Pick a color, any color */
 /** START HTML5 Boilerplate CSS **/
 /**
  * HTML5 ✰ Boilerplate
@@ -110,12 +117,6 @@ a:link {
 a:hover, a:active {
   outline: none; }
 
-a, a:active, a:visited {
-  color: #607890; }
-
-a:hover {
-  color: #036; }
-
 ul, ol {
   margin-left: 2em; }
 
@@ -208,13 +209,9 @@ input:invalid, textarea:invalid {
  */
 body, select, input, textarea {
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
-  color: #444;
+  color: #333333;
   /* Set your base font here, to apply evenly */
   /* font-family: Georgia, serif;  */ }
-
-/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
 
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
@@ -246,6 +243,134 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   margin: 10px; }
 
+/* Typography */
+/* master leading */
+/* leading relative to heading font-size */
+/* Padding for headings is the difference between the master line-height and the heading line-height, divided by two (so it's spread equally between top and bottom) */
+/* Top Level */
+/* Sub Level */
+/* Main menu settings */
+nav#centered {
+  clear: both;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 14px;
+  z-index: 1000;
+  position: relative; }
+  nav#centered ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    position: relative;
+    right: 50%; }
+    nav#centered ul li {
+      margin: 0 0 0 0;
+      padding: 0;
+      float: left;
+      position: relative;
+      left: 50%;
+      top: 1px; }
+      nav#centered ul li a {
+        display: block;
+        margin: 0;
+        padding: 6px 10px 6px;
+        line-height: 14px;
+        background: black;
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid green; }
+        nav#centered ul li a:hover {
+          background: #6c0420;
+          color: white;
+          border-bottom: 1px solid green; }
+    nav#centered ul.active a {
+      color: #fff;
+      background: #000; }
+    nav#centered ul ul {
+      display: none;
+      position: absolute;
+      top: 26px;
+      left: 0;
+      right: auto;
+      width: 10em; }
+      nav#centered ul ul li {
+        left: auto;
+        margin: 0;
+        clear: left;
+        width: 100%; }
+    nav#centered ul ul li a, nav#centered ul li.active li a, nav#centered ul li:hover ul li a {
+      font-size: 14px;
+      font-weight: normal;
+      background: black;
+      color: white;
+      line-height: 14px;
+      border-bottom: 1px solid green;
+      padding: 6px 10px 6px; }
+    nav#centered ul ul li a:hover, nav#centered ul li.active ul li a:hover, nav#centered ul li:hover ul li a:hover, nav#centered ul li.hover ul li a:hover {
+      background: #deb408;
+      color: white; }
+    nav#centered ul ul.last {
+      left: auto;
+      right: 0; }
+    nav#centered ul li:hover ul, nav#centered ul li.hover ul {
+      display: block; }
+
+p, li {
+  font: normal normal normal 14px/21px Helvetica;
+  margin-bottom: 14px;
+  color: #333333;
+  margin: 0; }
+
+h1 {
+  font: normal normal bold 84px/70px Helvetica;
+  padding: 28px 0;
+  margin: 0;
+  letter-spacing: -2px;
+  color: #6c0420; }
+
+h2 {
+  font: normal normal bold 70px/58.333px Helvetica;
+  padding: 23.333px 0;
+  margin: 0;
+  letter-spacing: -1.667px;
+  color: #deb408; }
+
+h3 {
+  font: normal normal bold 56px/46.667px Helvetica;
+  padding: 18.667px 0;
+  margin: 0;
+  letter-spacing: -1.333px;
+  color: #6c0420; }
+
+h4 {
+  font: normal normal bold 42px/35px Helvetica;
+  padding: 14px 0;
+  margin: 0;
+  letter-spacing: -1px;
+  color: #deb408; }
+
+h5 {
+  font: normal normal bold 28px/23.333px Helvetica;
+  padding: 9.333px 0;
+  margin: 0;
+  letter-spacing: -0.667px;
+  color: #6c0420; }
+
+h6 {
+  font: normal normal bold 14px/11.667px Helvetica;
+  padding: 4.667px 0;
+  margin: 0;
+  letter-spacing: -0.333px;
+  color: #deb408; }
+
+a {
+  color: blue; }
+
 /**
  * Primary styles
  *
@@ -254,7 +379,23 @@ h1, h2, h3, h4, h5, h6 {
 #container {
   width: 960px;
   margin: 0 auto;
-  background: url("images/12_col.gif") repeat-y top center; }
+  background: url("../images/16_col.gif") repeat-y top center; }
+
+header {
+  width: 940px;
+  margin: 0 10px 0 10px; }
+
+#main {
+  width: 700px;
+  float: left;
+  margin: 0 10px 0 10px;
+  background: yellow; }
+
+#side {
+  width: 220px;
+  float: right;
+  margin: 0 10px 0 10px;
+  background: yellow; }
 
 /* End primary styles */
 /**
@@ -304,16 +445,18 @@ h1, h2, h3, h4, h5, h6 {
 .invisible {
   visibility: hidden; }
 
-/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
-   nicolasgallagher.com/micro-clearfix-hack/ */
-.clearfix:before, .clearfix:after {
+/* Micro Clearfix */
+/* For modern browsers */
+.cf:before,
+.cf:after {
   content: "";
   display: table; }
 
-.clearfix:after {
+.cf:after {
   clear: both; }
 
-.clearfix {
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
   zoom: 1; }
 
 /**

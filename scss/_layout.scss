@@ -1,0 +1,13 @@
+$col_width:960/$cols;
+
+@mixin go_960($cols) {
+	width:960px;
+	margin:0 auto;
+	background:url('../images/'+$cols+'_col.gif') repeat-y top center;
+}
+
+@mixin stock_cube($colspan:$cols,$floater:0,$margins:0 10px 0 10px) {
+	width:($colspan * $col_width) - 20 + px;
+	@if $floater != 0 { float:$floater; }
+	margin:$margins;
+}
