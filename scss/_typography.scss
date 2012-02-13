@@ -7,9 +7,8 @@ $heading_lh:(10/12);/* leading relative to heading font-size */
 
 @mixin bodytype($style,$multi,$family,$color) {
 	font:$style #{$base*$multi}/#{$base*$multi*$master_lh} $family;
-	margin-bottom:$base;
 	color:$color;
-	margin:0;
+	margin:0 0 $base 0;
 }
 
 /* Padding for headings is the difference between the master line-height and the heading line-height, divided by two (so it's spread equally between top and bottom) */

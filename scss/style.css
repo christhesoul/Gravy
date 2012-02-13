@@ -7,13 +7,27 @@
 	Author URI: http://wearecondiment.com/
 	Version: 1.0
 */
-/* Create a palette, these are only as a guide */
-/* Fill These in for Magic */
-/* Choose from 12 or 16 */
-/* 14px is pretty good. 16px is arguably better. http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/ */
-/* Pick a font stack, any font stack */
+/* =======================
+   COLOURS
+   ======================= */
 /* Go for a #333 for the sake of legibility. After all, that's what Apple does. */
 /* Pick a color, any color */
+/* =======================
+   960 GRID
+   ======================= */
+/* Choose from 12 or 16 */
+/* =======================
+   TYPOGRAPHY
+   ======================= */
+/* 14px is pretty good. 16px is arguably better. http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/ */
+/* Pick a font stack, any font stack */
+/* =======================
+   NAVIGATION
+   ======================= */
+/* Anything other than center will produce a left aligned menu
+
+/* Top Level */
+/* Sub Level */
 /** START HTML5 Boilerplate CSS **/
 /**
  * HTML5 ✰ Boilerplate
@@ -247,10 +261,8 @@ body, select, input, textarea {
 /* master leading */
 /* leading relative to heading font-size */
 /* Padding for headings is the difference between the master line-height and the heading line-height, divided by two (so it's spread equally between top and bottom) */
-/* Top Level */
-/* Sub Level */
-/* Main menu settings */
-nav#centered {
+/* Centred menu with drop downs from http://matthewjamestaylor.com/blog/centered-dropdown-menus */
+nav#main_menu {
   clear: both;
   float: left;
   margin: 0;
@@ -261,21 +273,17 @@ nav#centered {
   line-height: 14px;
   z-index: 1000;
   position: relative; }
-  nav#centered ul {
+  nav#main_menu ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    float: right;
-    position: relative;
-    right: 50%; }
-    nav#centered ul li {
-      margin: 0 0 0 0;
+    position: relative; }
+    nav#main_menu ul li {
+      margin: 0 0 0 4px;
       padding: 0;
-      float: left;
       position: relative;
-      left: 50%;
       top: 1px; }
-      nav#centered ul li a {
+      nav#main_menu ul li a {
         display: block;
         margin: 0;
         padding: 6px 10px 6px;
@@ -284,26 +292,26 @@ nav#centered {
         text-decoration: none;
         color: white;
         border-bottom: 1px solid green; }
-        nav#centered ul li a:hover {
+        nav#main_menu ul li a:hover {
           background: #6c0420;
           color: white;
           border-bottom: 1px solid green; }
-    nav#centered ul.active a {
+    nav#main_menu ul.active a {
       color: #fff;
       background: #000; }
-    nav#centered ul ul {
+    nav#main_menu ul ul {
       display: none;
       position: absolute;
       top: 26px;
       left: 0;
       right: auto;
-      width: 10em; }
-      nav#centered ul ul li {
+      width: 200px; }
+      nav#main_menu ul ul li {
         left: auto;
         margin: 0;
         clear: left;
         width: 100%; }
-    nav#centered ul ul li a, nav#centered ul li.active li a, nav#centered ul li:hover ul li a {
+    nav#main_menu ul ul li a, nav#main_menu ul li.active li a, nav#main_menu ul li:hover ul li a {
       font-size: 14px;
       font-weight: normal;
       background: black;
@@ -311,20 +319,26 @@ nav#centered {
       line-height: 14px;
       border-bottom: 1px solid green;
       padding: 6px 10px 6px; }
-    nav#centered ul ul li a:hover, nav#centered ul li.active ul li a:hover, nav#centered ul li:hover ul li a:hover, nav#centered ul li.hover ul li a:hover {
+    nav#main_menu ul ul li a:hover, nav#main_menu ul li.active ul li a:hover, nav#main_menu ul li:hover ul li a:hover, nav#main_menu ul li.hover ul li a:hover {
       background: #deb408;
       color: white; }
-    nav#centered ul ul.last {
+    nav#main_menu ul ul.last {
       left: auto;
       right: 0; }
-    nav#centered ul li:hover ul, nav#centered ul li.hover ul {
+    nav#main_menu ul li:hover ul, nav#main_menu ul li.hover ul {
       display: block; }
+
+nav#main_menu ul {
+  float: right;
+  right: 50%; }
+  nav#main_menu ul li {
+    float: left;
+    left: 50%; }
 
 p, li {
   font: normal normal normal 14px/21px Helvetica;
-  margin-bottom: 14px;
   color: #333333;
-  margin: 0; }
+  margin: 0 0 14px 0; }
 
 h1 {
   font: normal normal bold 84px/70px Helvetica;
@@ -379,20 +393,20 @@ a {
 #container {
   width: 960px;
   margin: 0 auto;
-  background: url("../images/16_col.gif") repeat-y top center; }
+  background: url("../images/12_col.gif") repeat-y top center; }
 
 header {
   width: 940px;
   margin: 0 10px 0 10px; }
 
 #main {
-  width: 700px;
+  width: 940px;
   float: left;
   margin: 0 10px 0 10px;
   background: yellow; }
 
 #side {
-  width: 220px;
+  width: 300px;
   float: right;
   margin: 0 10px 0 10px;
   background: yellow; }

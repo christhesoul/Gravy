@@ -20,9 +20,9 @@ $dir = get_bloginfo('template_directory');
 		
 		<div id="container">
 		
-		<header role="banner">
+		<header role="banner" class="cf">
 
-			<?php wp_nav_menu( array( 'container' => 'nav','container_id' => 'centered','theme_location' => 'primary' ) ); ?>
+			<?php wp_nav_menu( array( 'container' => 'nav','container_id' => 'main_menu','theme_location' => 'primary' ) ); ?>
 				
 		</header>
 		
