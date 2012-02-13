@@ -8,8 +8,8 @@ $blue:#74B3C4;
 $green:#91BC49;
 
 $paragraph_color:#333; /* Go for a #333 for the sake of legibility. After all, that's what Apple does. */
-$heading_color_odd:$red; /* Pick a color, any color */
-$heading_color_even:$yellow;
+$heading_color_odd:$red; /* For h1,h3,h5 */
+$heading_color_even:$yellow; /* For h2,h4,h6 */
 $hyperlink_color:blue;
 
 /* =======================
@@ -22,35 +22,36 @@ $cols:12; /* Choose from 12 or 16 */
    TYPOGRAPHY
    ======================= */
 
-$base:14px; /* 14px is pretty good. 16px is arguably better. http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/ */
-$family:Helvetica; /* Pick a font stack, any font stack */
+$base:16px; /* 14px is pretty good. 16px is arguably better. http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/ */
+$family:Georgia,serif; /* Pick a font stack, any font stack */
 
 /* =======================
    NAVIGATION
    ======================= */
 
-$menu_type:center; /* Anything other than center will produce a left aligned menu
+$menu_type:left; /* Anything other than center will produce a left aligned menu
 
 /* Top Level */
 
-$top_level_size:14px;
+$top_level_size:24px;
 
 $border_bottom:1px solid green;
+$border_bottom_thickness:1px; /* Yes, yes. I know you've declared this above, but tough. You need to add this so we can calculate offsets */
 
-$top_level_padding_top:6px;
+$top_level_padding_top:26px;
 $top_level_padding_bottom:6px;
 $top_level_padding_left_right:10px;
 
 $link_color:#fff;
-$link_background:#000;
+$link_background:#ccc;
 $hover_background_color:$red;
 $hover_color:#fff;
 
-$px_between_menu_items:4px;
+$px_between_menu_items:0px;
 
 /* Sub Level */
 
-$sub_level_size:$top_level_size;
+$sub_level_size:16px;
 
 $sub_level_width:200px;
 

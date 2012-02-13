@@ -1,5 +1,17 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
-get_template_part( 'loop', 'single' );
-get_footer();
+<div id="main">
+
+<?php get_template_part( 'loop', 'single' ); ?>
+
+</div>
+
+<div id="side">
+	<p>This is the side</p>
+</div>
+
+<div id="side2">
+	<p>This is side 2</p>
+</div>
+
+<?php get_footer(); ?>

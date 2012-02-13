@@ -11,7 +11,8 @@
    COLOURS
    ======================= */
 /* Go for a #333 for the sake of legibility. After all, that's what Apple does. */
-/* Pick a color, any color */
+/* For h1,h3,h5 */
+/* For h2,h4,h6 */
 /* =======================
    960 GRID
    ======================= */
@@ -27,6 +28,7 @@
 /* Anything other than center will produce a left aligned menu
 
 /* Top Level */
+/* Yes, yes. I know you've declared this above, but tough. You need to add this so we can calculate offsets */
 /* Sub Level */
 /** START HTML5 Boilerplate CSS **/
 /**
@@ -268,9 +270,9 @@ nav#main_menu {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: Helvetica;
-  font-size: 14px;
-  line-height: 14px;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 24px;
   z-index: 1000;
   position: relative; }
   nav#main_menu ul {
@@ -279,16 +281,16 @@ nav#main_menu {
     list-style: none;
     position: relative; }
     nav#main_menu ul li {
-      margin: 0 0 0 4px;
+      margin: 0 0 0 0px;
       padding: 0;
-      position: relative;
-      top: 1px; }
+      position: relative; }
       nav#main_menu ul li a {
         display: block;
         margin: 0;
-        padding: 6px 10px 6px;
-        line-height: 14px;
-        background: black;
+        padding: 26px 10px 6px;
+        font-size: 24px;
+        line-height: 24px;
+        background: #cccccc;
         text-decoration: none;
         color: white;
         border-bottom: 1px solid green; }
@@ -302,7 +304,7 @@ nav#main_menu {
     nav#main_menu ul ul {
       display: none;
       position: absolute;
-      top: 26px;
+      top: 57px;
       left: 0;
       right: auto;
       width: 200px; }
@@ -312,13 +314,13 @@ nav#main_menu {
         clear: left;
         width: 100%; }
     nav#main_menu ul ul li a, nav#main_menu ul li.active li a, nav#main_menu ul li:hover ul li a {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: normal;
-      background: black;
+      background: #cccccc;
       color: white;
-      line-height: 14px;
+      line-height: 16px;
       border-bottom: 1px solid green;
-      padding: 6px 10px 6px; }
+      padding: 26px 10px 6px; }
     nav#main_menu ul ul li a:hover, nav#main_menu ul li.active ul li a:hover, nav#main_menu ul li:hover ul li a:hover, nav#main_menu ul li.hover ul li a:hover {
       background: #deb408;
       color: white; }
@@ -329,55 +331,55 @@ nav#main_menu {
       display: block; }
 
 nav#main_menu ul {
-  float: right;
-  right: 50%; }
+  float: left;
+  left: 0; }
   nav#main_menu ul li {
     float: left;
-    left: 50%; }
+    left: 0; }
 
 p, li {
-  font: normal normal normal 14px/21px Helvetica;
+  font: normal normal normal 16px/24px Georgia, serif;
   color: #333333;
-  margin: 0 0 14px 0; }
+  margin: 0 0 16px 0; }
 
 h1 {
-  font: normal normal bold 84px/70px Helvetica;
-  padding: 28px 0;
+  font: normal normal bold 96px/80px Georgia, serif;
+  padding: 32px 0;
   margin: 0;
   letter-spacing: -2px;
   color: #6c0420; }
 
 h2 {
-  font: normal normal bold 70px/58.333px Helvetica;
-  padding: 23.333px 0;
+  font: normal normal bold 80px/66.667px Georgia, serif;
+  padding: 26.667px 0;
   margin: 0;
   letter-spacing: -1.667px;
   color: #deb408; }
 
 h3 {
-  font: normal normal bold 56px/46.667px Helvetica;
-  padding: 18.667px 0;
+  font: normal normal bold 64px/53.333px Georgia, serif;
+  padding: 21.333px 0;
   margin: 0;
   letter-spacing: -1.333px;
   color: #6c0420; }
 
 h4 {
-  font: normal normal bold 42px/35px Helvetica;
-  padding: 14px 0;
+  font: normal normal bold 48px/40px Georgia, serif;
+  padding: 16px 0;
   margin: 0;
   letter-spacing: -1px;
   color: #deb408; }
 
 h5 {
-  font: normal normal bold 28px/23.333px Helvetica;
-  padding: 9.333px 0;
+  font: normal normal bold 32px/26.667px Georgia, serif;
+  padding: 10.667px 0;
   margin: 0;
   letter-spacing: -0.667px;
   color: #6c0420; }
 
 h6 {
-  font: normal normal bold 14px/11.667px Helvetica;
-  padding: 4.667px 0;
+  font: normal normal bold 16px/13.333px Georgia, serif;
+  padding: 5.333px 0;
   margin: 0;
   letter-spacing: -0.333px;
   color: #deb408; }
@@ -397,15 +399,22 @@ a {
 
 header {
   width: 940px;
-  margin: 0 10px 0 10px; }
+  margin: 0 10px 0 10px;
+  background: blue; }
 
 #main {
-  width: 940px;
+  width: 300px;
   float: left;
   margin: 0 10px 0 10px;
   background: yellow; }
 
 #side {
+  width: 300px;
+  float: left;
+  margin: 0 10px 0 10px;
+  background: yellow; }
+
+#side2 {
   width: 300px;
   float: right;
   margin: 0 10px 0 10px;

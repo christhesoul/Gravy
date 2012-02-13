@@ -18,7 +18,7 @@ $dir = get_bloginfo('template_directory');
 	</head>
 	<body <?php body_class(); ?>>
 		
-		<div id="container">
+		<div id="container" class="cf">
 		
 		<header role="banner" class="cf">
 
