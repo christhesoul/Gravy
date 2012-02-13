@@ -1,5 +1,9 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
-get_template_part( 'loop', 'index' );
-get_footer();
+<div class="container">
+
+<?php get_template_part( 'loop', 'index' ); ?>
+
+</div>
+
+<?php get_footer(); ?>

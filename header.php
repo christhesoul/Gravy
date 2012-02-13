@@ -17,12 +17,11 @@ $dir = get_bloginfo('template_directory');
 		<?php	wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
+		<div class="topbar">
+			<?php wp_nav_menu( array( 'container_class' => 'fill', 'theme_location' => 'primary' ) ); ?>
+    </div>
+		
 		<header role="banner">
 
 		</header>
-		<nav id="access" role="navigation">
-			<a id="skip" href="#content" title="Skip to content">Skip to content</a>
-			<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-		</nav>
 		
-		<section id="content" role="main">
