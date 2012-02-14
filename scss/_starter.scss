@@ -24,6 +24,7 @@ $cols:12; /* Choose from 12 or 16 */
 
 $base:16px; /* 14px is pretty good. 16px is arguably better. http://www.smashingmagazine.com/2011/10/07/16-pixels-body-copy-anything-less-costly-mistake/ */
 $family:Georgia,serif; /* Pick a font stack, any font stack */
+$head_family:$family; /* Choose a separate font stack for the headings */
 
 /* =======================
    NAVIGATION

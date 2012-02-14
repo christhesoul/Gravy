@@ -28,7 +28,7 @@ nav#main_menu { clear:both;float:left;margin:0;padding:0;width:100%;font-family:
 	ul { margin:0;padding:0;list-style:none;position:relative;
 		li { margin:0 0 0 $px_between_menu_items;padding:0;position:relative;
 			a { display:block;margin:0;padding:$top_level_padding_top $top_level_padding_left_right $top_level_padding_bottom;font-size:$top_level_size;line-height:$top_level_size;background:$link_background;text-decoration:none;color:$link_color;border-bottom:$border_bottom;
-				&:hover { background:$hover_background_color;color:$hover_color;border-bottom:$sub_border_bottom; }
+				&:hover { background:$hover_background_color;color:$hover_color;border-bottom:$border_bottom; }
 			}
 		}
 		&.active a { 	color:#fff;background:#000; }

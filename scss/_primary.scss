@@ -2,5 +2,5 @@
 
 header { @include stock_cube; }
 
-#main { @include stock_cube(8,left); }
+#main { @include stock_cube(8,center); }
 #side { @include stock_cube(4,left); }
