@@ -1,7 +1,6 @@
-#container { @include go_960; }
+#container { @include go_960(on); }
 
-header { @include stock_cube;background:blue; }
+header { @include stock_cube; }
 
-#main { @include stock_cube(4,left);background:yellow; }
-#side { @include stock_cube(4,left);background:yellow; }
-#side2 { @include stock_cube(4,right);background:yellow; }
+#main { @include stock_cube(8,left); }
+#side { @include stock_cube(4,left); }

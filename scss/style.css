@@ -25,7 +25,7 @@
 /* =======================
    NAVIGATION
    ======================= */
-/* Anything other than center will produce a left aligned menu
+/* stacking | lefty | center
 
 /* Top Level */
 /* Yes, yes. I know you've declared this above, but tough. You need to add this so we can calculate offsets */
@@ -271,8 +271,8 @@ nav#main_menu {
   padding: 0;
   width: 100%;
   font-family: Georgia, serif;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 16px;
   z-index: 1000;
   position: relative; }
   nav#main_menu ul {
@@ -288,23 +288,23 @@ nav#main_menu {
         display: block;
         margin: 0;
         padding: 26px 10px 6px;
-        font-size: 24px;
-        line-height: 24px;
-        background: #cccccc;
+        font-size: 16px;
+        line-height: 16px;
+        background: #dddddd;
         text-decoration: none;
-        color: white;
-        border-bottom: 1px solid green; }
+        color: #333333;
+        border-bottom: 1px solid #666666; }
         nav#main_menu ul li a:hover {
           background: #6c0420;
           color: white;
-          border-bottom: 1px solid green; }
+          border-bottom: 1px solid #777777; }
     nav#main_menu ul.active a {
       color: #fff;
       background: #000; }
     nav#main_menu ul ul {
       display: none;
       position: absolute;
-      top: 57px;
+      top: 49px;
       left: 0;
       right: auto;
       width: 200px; }
@@ -316,11 +316,11 @@ nav#main_menu {
     nav#main_menu ul ul li a, nav#main_menu ul li.active li a, nav#main_menu ul li:hover ul li a {
       font-size: 16px;
       font-weight: normal;
-      background: #cccccc;
-      color: white;
+      background: #dddddd;
+      color: #333333;
       line-height: 16px;
-      border-bottom: 1px solid green;
-      padding: 26px 10px 6px; }
+      border-bottom: 1px solid #777777;
+      padding: 8px 10px 6px; }
     nav#main_menu ul ul li a:hover, nav#main_menu ul li.active ul li a:hover, nav#main_menu ul li:hover ul li a:hover, nav#main_menu ul li.hover ul li a:hover {
       background: #deb408;
       color: white; }
@@ -331,11 +331,11 @@ nav#main_menu {
       display: block; }
 
 nav#main_menu ul {
-  float: left;
-  left: 0; }
+  float: right;
+  right: 50%; }
   nav#main_menu ul li {
     float: left;
-    left: 0; }
+    left: 50%; }
 
 p, li {
   font: normal normal normal 16px/24px Georgia, serif;
@@ -399,26 +399,17 @@ a {
 
 header {
   width: 940px;
-  margin: 0 10px 0 10px;
-  background: blue; }
+  margin: 0 10px 20px 10px; }
 
 #main {
-  width: 300px;
+  width: 620px;
   float: left;
-  margin: 0 10px 0 10px;
-  background: yellow; }
+  margin: 0 10px 20px 10px; }
 
 #side {
   width: 300px;
   float: left;
-  margin: 0 10px 0 10px;
-  background: yellow; }
-
-#side2 {
-  width: 300px;
-  float: right;
-  margin: 0 10px 0 10px;
-  background: yellow; }
+  margin: 0 10px 20px 10px; }
 
 /* End primary styles */
 /**

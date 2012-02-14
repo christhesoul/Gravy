@@ -1,16 +1,23 @@
 $position_of_sub_menu:$top_level_padding_top + $top_level_padding_bottom + $top_level_size + $border_bottom_thickness;
 
 @mixin menu_layout { 
-	@if $menu_type != center {
+	@if $menu_type == lefty {
 		nav#main_menu {
 			ul { float:left;left:0; 
 				li { float:left;left:0;	}
 			}
 		}
-	} @else {
+	} @else if $menu_type == center {
 		nav#main_menu {
 			ul { float:right;right:50%; 
 				li { float:left;left:50%;	}
+			}
+		}
+	} @else if $menu_type == stacking {
+		nav#main_menu {
+			ul { float:none;left:0; 
+				li { float:none;left:0;width:100%; }
+				ul { top:0;left:100%; }
 			}
 		}
 	}
