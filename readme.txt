@@ -1,3 +1,10 @@
+== This is Gravy ==
+
+Gravy is created to make Wordpress development blissfully simple.
+
+
+== Credits left in from Starkers Theme ===
+
 === Theme Name ===
 Contributors: aarontgrogg
 Tags: html5, boilerplate
