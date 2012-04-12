@@ -33,4 +33,7 @@ $heading_lh:(10/12);/* leading relative to heading font-size */
 		&:hover { color:$hyperlink_hover }
 	}
 	p a { text-decoration:underline; }
+	blockquote { padding:0 20px;border-left:5px solid #bbb;
+		p { font-style:italic; }
+	}
 }

@@ -4,7 +4,7 @@
 	
 	<div class="cf">
 		
-		<div class="span12">
+		<div class="span10">
 			
 			<?php get_template_part( 'loop', 'page' ); ?>
 			
@@ -15,9 +15,9 @@
 				
 		</div>
 		
-		<div class="span4">
+		<div class="span6">
 			
-			<h1>Sidebar</h1>
+			<h3>Sidebar</h3>
 			
 		</div>
 		

@@ -486,6 +486,12 @@ a {
 p a {
   text-decoration: underline; }
 
+blockquote {
+  padding: 0 20px;
+  border-left: 5px solid #bbb; }
+  blockquote p {
+    font-style: italic; }
+
 #container {
   width: 960px;
   margin: 0 auto;
