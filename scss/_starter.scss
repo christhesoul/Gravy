@@ -11,6 +11,7 @@ $paragraph_color:#333; /* Go for a #333 for the sake of legibility. After all, t
 $heading_color_odd:$red; /* For h1,h3,h5 */
 $heading_color_even:$yellow; /* For h2,h4,h6 */
 $hyperlink_color:blue;
+$hyperlink_hover:green;
 
 /* =======================
    960 GRID
@@ -30,7 +31,9 @@ $head_family:$family; /* Choose a separate font stack for the headings */
    NAVIGATION
    ======================= */
 
-$menu_type:center; /* stacking | lefty | center
+$menu_type:center; /* stacking | lefty | center */
+
+$button_press:yes; /* Clicking a menu link pushes it down 1px, creating a button press effect */
 
 /* Top Level */
 

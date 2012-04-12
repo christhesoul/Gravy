@@ -1,12 +1,4 @@
 @charset "UTF-8";
-/*
-	Theme Name: Gravy
-	Theme URI: http://aarontgrogg.com/boilerplate/
-	Description: Gravy is some Condiment dolloped on the top of a merger created by Aaron T. Grogg (<a href="http://aarontgrogg.com/">http://aarontgrogg.com/</a>) of the HTML5 Boilerplate (<a href="http://html5boilerplate.com/">http://html5boilerplate.com/</a>) and the Starkers theme (<a href="http://starkerstheme.com/">http://starkerstheme.com/</a>).
-	Author: Condiment, based on the work of Aaron T. Grogg, Paul Irish, Divya Manian, and Elliot Jay Stocks
-	Author URI: http://wearecondiment.com/
-	Version: 1.0
-*/
 /* =======================
    COLOURS
    ======================= */
@@ -26,8 +18,8 @@
 /* =======================
    NAVIGATION
    ======================= */
-/* stacking | lefty | center
-
+/* stacking | lefty | center */
+/* Clicking a menu link pushes it down 1px, creating a button press effect */
 /* Top Level */
 /* Yes, yes. I know you've declared this above, but tough. You need to add this so we can calculate offsets */
 /* Sub Level */
@@ -299,6 +291,9 @@ nav#main_menu {
           background: #6c0420;
           color: white;
           border-bottom: 1px solid #666666; }
+        nav#main_menu ul li a:active {
+          position: relative;
+          top: 1px; }
     nav#main_menu ul.active a {
       color: #fff;
       background: #000; }
@@ -338,6 +333,7 @@ nav#main_menu ul {
     float: left;
     left: 50%; }
 
+/* The typography.scss file creates a mixin. This includes that mixin. */
 p, li {
   font: normal normal normal 16px/24px Georgia, serif;
   color: #333333;
@@ -387,33 +383,33 @@ h6 {
 
 a {
   color: blue; }
+  a:hover {
+    color: green; }
 
-/**
- * Primary styles
- *
- * Author: Condiment
- */
 #container {
   width: 960px;
   margin: 0 auto;
-  background: url("../images/12_col.gif") repeat-y top center; }
+  background: white url("../images/12_col.gif") repeat-y top center; }
 
 header {
   width: 940px;
-  margin: 0 10px 20px 10px;
-  float: none; }
+  margin: 0px 10px 20px 10px;
+  float: none;
+  padding: 0px 0px 0px 0px; }
 
 #main {
   width: 620px;
-  margin: 0 10px 20px 10px;
+  margin: 0px 10px 20px 10px;
   clear: both;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0px 0px 0px 0px; }
 
 #side {
   width: 300px;
-  margin: 0 10px 20px 10px;
-  float: left; }
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
 
 /* End primary styles */
 /**

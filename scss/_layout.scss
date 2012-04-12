@@ -3,11 +3,13 @@ $col_width:960/$cols;
 @mixin go_960($switch) {
 	width:960px;
 	margin:0 auto;
-	@if $switch == on { background:url('../images/'+$cols+'_col.gif') repeat-y top center; }
+	@if $switch == on { background:#fff url("../images/12_col.gif") repeat-y top center; }
+	@else { background:#fff; }
 }
 
-@mixin stock_cube($colspan:$cols,$floater:none,$margins:0 10px 20px 10px) {
-	width:($colspan * $col_width) - 20 + px;
-	margin:$margins;
+@mixin stock_cube($colspan:$cols,$floater:none,$mt:0,$mr:10,$mb:20,$ml:10,$pt:0,$pr:0,$pb:0,$pl:0) {
+	width:($colspan * $col_width) - ($ml + $mr) - ($pl + $pr) + px;
+	margin:$mt+px $mr+px $mb+px $ml+px;
 	@if $floater != center { float:$floater; } @else { clear:both;margin-left:auto;margin-right:auto; }
+	padding:$pt+px $pr+px $pb+px $pl+px;
 }

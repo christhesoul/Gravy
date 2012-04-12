@@ -13,7 +13,7 @@ $heading_lh:(10/12);/* leading relative to heading font-size */
 
 /* Padding for headings is the difference between the master line-height and the heading line-height, divided by two (so it's spread equally between top and bottom) */
 @mixin heading($style,$multi,$family,$color) {
-	font:$style #{$base*$multi}/#{($base*$multi*$heading_lh)} $family;
+	font:$style #{$base*$multi}/#{($base*$multi*$heading_lh)} $head_family;
 	padding:(($base*$multi*$master_lh)-($base*$multi*$heading_lh))/2 0;
 	margin:0;
 	letter-spacing:-1px*($multi/3);
@@ -29,5 +29,7 @@ $heading_lh:(10/12);/* leading relative to heading font-size */
 	h4 { @include heading($bold,3,$family,$heading_color_even) }
 	h5 { @include heading($bold,2,$family,$heading_color_odd) }
 	h6 { @include heading($bold,1,$family,$heading_color_even) }
-	a { color:$hyperlink_color }
+	a { color:$hyperlink_color;
+		&:hover { color:$hyperlink_hover }
+	}
 }
