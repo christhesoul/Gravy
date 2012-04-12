@@ -2,7 +2,7 @@
 
 <div id="container">
 	
-	<div class="row">
+	<div class="cf">
 		
 		<div class="span12">
 			

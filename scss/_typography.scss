@@ -23,13 +23,14 @@ $heading_lh:(10/12);/* leading relative to heading font-size */
 @mixin typography($base_px:$base) {
 	$base:$base_px;
 	p, li { @include bodytype($normal,1,$family,$paragraph_color) }
-	h1 { @include heading($bold,6,$family,$heading_color_odd) }
-	h2 { @include heading($bold,5,$family,$heading_color_even) }
-	h3 { @include heading($bold,4,$family,$heading_color_odd) }
-	h4 { @include heading($bold,3,$family,$heading_color_even) }
+	h1 { @include heading($bold,4,$family,$heading_color_odd) }
+	h2 { @include heading($bold,3.5,$family,$heading_color_even) }
+	h3 { @include heading($bold,3,$family,$heading_color_odd) }
+	h4 { @include heading($bold,2.5,$family,$heading_color_even) }
 	h5 { @include heading($bold,2,$family,$heading_color_odd) }
 	h6 { @include heading($bold,1,$family,$heading_color_even) }
-	a { color:$hyperlink_color;
+	a { color:$hyperlink_color;text-decoration:none;
 		&:hover { color:$hyperlink_hover }
 	}
+	p a { text-decoration:underline; }
 }

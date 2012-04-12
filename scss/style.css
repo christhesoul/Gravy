@@ -256,6 +256,102 @@ body, select, input, textarea {
 /* master leading */
 /* leading relative to heading font-size */
 /* Padding for headings is the difference between the master line-height and the heading line-height, divided by two (so it's spread equally between top and bottom) */
+.span16 {
+  width: 940px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span15 {
+  width: 880px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span14 {
+  width: 820px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span13 {
+  width: 760px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span12 {
+  width: 700px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span11 {
+  width: 640px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span10 {
+  width: 580px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span9 {
+  width: 520px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span8 {
+  width: 460px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span7 {
+  width: 400px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span6 {
+  width: 340px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span5 {
+  width: 280px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span4 {
+  width: 220px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span3 {
+  width: 160px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span2 {
+  width: 100px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
+.span1 {
+  width: 40px;
+  margin: 0px 10px 20px 10px;
+  float: left;
+  padding: 0px 0px 0px 0px; }
+
 /* Centred menu with drop downs from http://matthewjamestaylor.com/blog/centered-dropdown-menus */
 nav#main_menu {
   clear: both;
@@ -340,31 +436,31 @@ p, li {
   margin: 0 0 16px 0; }
 
 h1 {
-  font: normal normal bold 96px/80px Georgia, serif;
-  padding: 32px 0;
-  margin: 0;
-  letter-spacing: -2px;
-  color: #6c0420; }
-
-h2 {
-  font: normal normal bold 80px/66.667px Georgia, serif;
-  padding: 26.667px 0;
-  margin: 0;
-  letter-spacing: -1.667px;
-  color: #deb408; }
-
-h3 {
   font: normal normal bold 64px/53.333px Georgia, serif;
   padding: 21.333px 0;
   margin: 0;
   letter-spacing: -1.333px;
   color: #6c0420; }
 
-h4 {
+h2 {
+  font: normal normal bold 56px/46.667px Georgia, serif;
+  padding: 18.667px 0;
+  margin: 0;
+  letter-spacing: -1.167px;
+  color: #deb408; }
+
+h3 {
   font: normal normal bold 48px/40px Georgia, serif;
   padding: 16px 0;
   margin: 0;
   letter-spacing: -1px;
+  color: #6c0420; }
+
+h4 {
+  font: normal normal bold 40px/33.333px Georgia, serif;
+  padding: 13.333px 0;
+  margin: 0;
+  letter-spacing: -0.833px;
   color: #deb408; }
 
 h5 {
@@ -382,14 +478,18 @@ h6 {
   color: #deb408; }
 
 a {
-  color: blue; }
+  color: blue;
+  text-decoration: none; }
   a:hover {
     color: green; }
+
+p a {
+  text-decoration: underline; }
 
 #container {
   width: 960px;
   margin: 0 auto;
-  background: white url("../images/12_col.gif") repeat-y top center; }
+  background: white url("../images/16_col.gif") repeat-y top center; }
 
 header {
   width: 940px;
@@ -398,7 +498,7 @@ header {
   padding: 0px 0px 0px 0px; }
 
 #main {
-  width: 620px;
+  width: 460px;
   margin: 0px 10px 20px 10px;
   clear: both;
   margin-left: auto;
@@ -406,7 +506,7 @@ header {
   padding: 0px 0px 0px 0px; }
 
 #side {
-  width: 300px;
+  width: 220px;
   margin: 0px 10px 20px 10px;
   float: left;
   padding: 0px 0px 0px 0px; }
