@@ -177,4 +177,9 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 include_once 'custom-post-types/cpts.php';
 
+/* Custom Meta Boxes */
+
+include_once 'metaboxes/setup.php';
+
+
 ?>
