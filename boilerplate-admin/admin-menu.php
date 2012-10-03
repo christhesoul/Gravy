@@ -230,8 +230,6 @@
 			echo '<p>If you choose to use any <a href="http://plugins.jquery.com/">jQuery plug-ins</a>, I recommend downloading and concatenating them together in a single JS file, as below.  This will <a href="http://developer.yahoo.com/performance/rules.html">reduce your site\'s HTTP Requests</a>, making your site a better experience.</p>';
 			echo '<p>Selecting this option will add the following code to your pages just before the <code>&lt;/body&gt;</code>:</p>';
 			echo '<code>&lt;script type=\'text/javascript\' src=\'' .get_template_directory_uri(). '/js/plug-in.js?ver=x\'&gt;&lt;/script&gt;</code>';
-			echo '<p>(The single quotes and no-longer-necessary attributes are from WP, would like to fix that... maybe next update...)</p>';
-			echo '<p><strong>Note: If you do <em>not</em> include jQuery, this file will <em>not</em> be added to the page.</strong></p>';
 		}
 
 	//	callback fn for site_js
@@ -333,14 +331,14 @@
 		function add_jquery_script() {
 			$cache = cache_buster();
 			wp_deregister_script( 'jquery' ); // get rid of WP's jQuery
-			echo '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>'.PHP_EOL; // try getting from CDN
+			echo '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>'.PHP_EOL; // try getting from CDN
 			echo '<script>!window.jQuery && document.write(unescape(\'%3Cscript src="' .get_template_directory_uri(). '/js/jquery.js'.$cache.'"%3E%3C/script%3E\'))</script>'.PHP_EOL; // fallback to local if CDN fails
 		}
 
 	//	$options['plugins_js']
 		function add_plugin_script() {
 			$cache = str_replace('?ver=','',cache_buster());
-			wp_register_script( 'plug_ins', get_template_directory_uri(). '/js/plugins.js', array(), $cache, true );
+			wp_register_script( 'plug_ins', get_template_directory_uri(). '/js/bootstrap.min.js', array(), $cache, true );
 			wp_enqueue_script( 'plug_ins' );
 		}
 
@@ -391,13 +389,13 @@
 				add_action('wp_print_styles', 'add_ie_stylesheet');
 			}
 			if (isset($options['jquery_js']) && $options['jquery_js']) {
-				add_action('wp_print_footer_scripts', 'add_jquery_script');
+				add_action('wp_footer', 'add_jquery_script');
 			}
 			if (isset($options['jquery_js']) && $options['jquery_js'] && isset($options['plugins_js']) && $options['plugins_js']) {
 				add_action('wp_loaded', 'add_plugin_script');
 			}
 			if (isset($options['site_js']) && $options['site_js']) {
-				add_action('wp_loaded', 'add_site_script');
+				add_action('wp_footer', 'add_site_script');
 			}
 		}
 

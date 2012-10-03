@@ -5,3 +5,4 @@
 	Recommend removing that and adding "js" as one of the first things your script does.
 	Note that if you are using Modernizr, it already does this for you. :-)
 */
+$('.carousel').carousel();
