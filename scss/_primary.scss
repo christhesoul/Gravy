@@ -1,6 +1,0 @@
-#container { @include go_960(on); }
-
-header { @include stock_cube; }
-
-#main { @include stock_cube(8,center); }
-#side { @include stock_cube(4,left); }

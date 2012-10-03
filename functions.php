@@ -55,7 +55,7 @@ if ( ! isset( $content_width ) )
  */
 function wpi_stylesheet_dir_uri($stylesheet_dir_uri, $theme_name){
 
-	$subdir = '/scss';
+	$subdir = '/sass';
 	return $stylesheet_dir_uri.$subdir;
 
 }
