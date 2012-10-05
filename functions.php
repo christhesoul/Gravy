@@ -335,11 +335,8 @@ function add_active_class($classes, $item) {
 
 // Here ends the navbar stuff
 
-include_once 'custom-post-types/cpts.php';
-
-/* Custom Meta Boxes */
-
-include_once 'metaboxes/setup.php';
+/* Custom Post Types */
+// include_once 'custom-post-types/cpts.php';
 
 
 ?>
