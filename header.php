@@ -22,7 +22,34 @@ $dir = get_bloginfo('template_directory');
 		
 		<header role="banner" class="cf">
 
-			<?php wp_nav_menu( array( 'container' => 'nav','container_id' => 'main_menu','theme_location' => 'primary' ) ); ?>
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container-fluid nav-container">
+						<nav role="navigation">
+							<a class="brand hidden-desktop" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+							
+							<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+							</a>
+							
+							<div class="nav-collapse">
+								<?php bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+							</div>
+							
+						</nav>
+						
+						<form class="navbar-search form-search pull-right visible-desktop" action="<?php echo home_url( '/' ); ?>">
+						  <div class="input-append">
+						    <input type="text" placeholder="Search" name="s" id="search" class="span2 search-query" value="<?php the_search_query(); ?>">
+						    <button type="submit" class="btn">Search</button>
+						  </div>
+						</form> 
+						
+					</div>
+				</div>
+			</div>
 				
 		</header>
 		
