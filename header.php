@@ -24,30 +24,19 @@ $dir = get_bloginfo('template_directory');
 
 			<div class="navbar">
 				<div class="navbar-inner">
-					<div class="container-fluid nav-container">
-						<nav role="navigation">
-							<a class="brand hidden-desktop" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
-							
-							<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-							</a>
-							
-							<div class="nav-collapse">
-								<?php bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-							</div>
-							
-						</nav>
-						
-						<form class="navbar-search form-search pull-right visible-desktop" action="<?php echo home_url( '/' ); ?>">
-						  <div class="input-append">
-						    <input type="text" placeholder="Search" name="s" id="search" class="span2 search-query" value="<?php the_search_query(); ?>">
-						    <button type="submit" class="btn">Search</button>
-						  </div>
-						</form> 
-						
-					</div>
+					<a class="brand visible-phone visible-tablet" href="<?php bloginfo(url); ?>">Lowestoft Town Pastors</a>
+					<a href="#" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+					</a>
+					<?php wp_nav_menu( array( 'container' => 'div','container_class' => 'nav-collapse','menu_class' => 'nav', 'theme_location' => 'primary' ) ); ?>
+					<!-- <form class="navbar-search form-search pull-right visible-desktop" action="<?php echo home_url( '/' ); ?>">
+					  <div class="nav-search input-append">
+					    <input type="text" placeholder="Search" name="s" id="search" class="span2 search-query" value="<?php the_search_query(); ?>">
+					    <button type="submit" class="btn btn-mustard">Search</button>
+					  </div>
+					</form>   -->
 				</div>
 			</div>
 				
