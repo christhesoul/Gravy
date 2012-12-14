@@ -1475,7 +1475,7 @@ table .span12 {
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: asset-url("glyphicons-halflings.png", image);
+  background-image: asset-url("../images/glyphicons-halflings.png", image);
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px; }
@@ -1488,7 +1488,7 @@ table .span12 {
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 .dropdown-menu > .active > a > [class*=" icon-"] {
-  background-image: asset-url("glyphicons-halflings-white.png", image); }
+  background-image: asset-url("../images/glyphicons-halflings-white.png", image); }
 
 .icon-glass {
   background-position: 0      0; }
